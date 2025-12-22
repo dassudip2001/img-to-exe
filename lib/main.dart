@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_app/screens/welcome.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() async {
@@ -26,17 +27,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.black,
-        body: SizedBox.expand(
-          child: Image(
-            image: AssetImage('assets/images/image.jpg'),
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
-    );
+    return WelCome();
   }
 }
